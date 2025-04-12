@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bun-hello-world
+  labels:
+    app: bun-hello-world
+    tier: backend
+spec:
+  containers:
+    - name: bun-hello-world
+      image: local/bun-hello-world
+      imagePullPolicy: Never

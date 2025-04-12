@@ -62,3 +62,11 @@ kubectx minikube
 You can use `k9s` to inspect into active Cluster resources.
 
 ![k9s dashboard](images/1_1_k9s.png)
+
+### Reuse Minikube's Docker
+
+Reuse the Docker daemon from Minikube using:
+
+```sh
+eval $(minikube docker-env)
+```
